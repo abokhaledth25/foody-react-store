@@ -1,0 +1,103 @@
+
+.hero {
+  background-color: #e7e9f0;
+  background-image: url("/images/carousel-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: #222;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #3cb815;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin: 25px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.shop-btn {
+  display: inline-block;
+  background-color: #3cb815;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.shop-btn:hover {
+  background-color: #2e9410;
+}
+
+@media (max-width: 768px) {
+ 
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("/images/carousel-1.jpg");
+
+  background-position: 60% center;
+}
+
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+
+.featured {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.featured > p {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 25px;
+}

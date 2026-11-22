@@ -1,0 +1,280 @@
+
+.checkout-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.checkout-page > h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.checkout-form,
+.checkout-summary {
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.checkout-form {
+  background: white;
+  border: 1px solid #eee;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.checkout-field label {
+  font-weight: 600;
+  color: #333;
+}
+
+.checkout-field input,
+.checkout-field textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.checkout-field input:focus,
+.checkout-field textarea:focus {
+  outline: none;
+  border-color: #3cb815;
+}
+
+.checkout-summary {
+  background: #f3f8ed;
+}
+
+.checkout-item,
+.checkout-row,
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.checkout-item {
+  font-size: 14px;
+}
+
+.checkout-summary hr {
+  border: none;
+  border-top: 1px solid #d5e4cf;
+  margin: 25px 0;
+}
+
+.checkout-total {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3cb815;
+}
+
+.checkout-place-btn {
+  width: 100%;
+  padding: 15px;
+  background: #3cb815;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkout-place-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.checkout-note {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.checkout-empty {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.checkout-empty p {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.checkout-empty a {
+  display: inline-block;
+  background: #3cb815;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 20px;
+  }
+}
+
+
+
+.checkout-field input[aria-invalid="true"],
+.checkout-field textarea[aria-invalid="true"] {
+  border-color: #dc2626;
+  background-color: #fff8f8;
+}
+
+.checkout-error {
+  color: #dc2626;
+  font-size: 13px;
+  margin: 2px 0 0;
+}
+
+.checkout-success {
+  color: #237d0b;
+  background: #e6f7df;
+  border: 1px solid #b5e7a6;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.checkout-place-btn:hover:not(:disabled) {
+  background-color: #2e9410;
+}
+
+.checkout-field input:focus,
+.checkout-field textarea:focus {
+  border-color: #3cb815;
+  outline: 2px solid rgba(60, 184, 21, 0.2);
+}
+
+
+.order-success-page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.order-success-icon {
+  width: 85px;
+  height: 85px;
+  background: #3cb815;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.order-success-page h1 {
+  color: #3cb815;
+  font-size: 34px;
+}
+
+.order-success-message {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.order-reference {
+  background: #f3f8ed;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-reference span {
+  color: #666;
+}
+
+.order-reference strong {
+  color: #3cb815;
+  font-size: 25px;
+  overflow-wrap: anywhere;
+}
+
+.order-success-details {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.order-success-details h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.order-success-details h3 {
+  margin-top: 25px;
+}
+
+.order-success-details p {
+  color: #555;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.order-success-details hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.order-demo-note {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .order-success-page h1 {
+    font-size: 27px;
+  }
+
+  .order-success-details {
+    padding: 20px;
+  }
+}
